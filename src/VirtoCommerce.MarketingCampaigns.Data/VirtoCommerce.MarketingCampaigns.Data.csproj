@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- Project is not a test project -->
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    <PackageReference Include="VirtoCommerce.MarketingModule.Core" Version="3.1001.0-alpha.913-vcst-4590" />
+    <PackageReference Include="VirtoCommerce.Platform.Data" Version="3.1002.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VirtoCommerce.MarketingCampaigns.Core\VirtoCommerce.MarketingCampaigns.Core.csproj" />
+  </ItemGroup>
+</Project>
