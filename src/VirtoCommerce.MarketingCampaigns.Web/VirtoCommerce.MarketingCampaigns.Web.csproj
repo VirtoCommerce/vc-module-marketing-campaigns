@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <IsPackable>false</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591;NU1608</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- Project is not a test project -->
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="dist\**" />
+    <Content Remove="dist\**" />
+    <EmbeddedResource Remove="dist\**" />
+    <None Remove="dist\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VirtoCommerce.MarketingCampaigns.Core\VirtoCommerce.MarketingCampaigns.Core.csproj" />
+    <ProjectReference Include="..\VirtoCommerce.MarketingCampaigns.Data\VirtoCommerce.MarketingCampaigns.Data.csproj" />
+    <ProjectReference Include="..\VirtoCommerce.MarketingCampaigns.Data.MySql\VirtoCommerce.MarketingCampaigns.Data.MySql.csproj" />
+    <ProjectReference Include="..\VirtoCommerce.MarketingCampaigns.Data.PostgreSql\VirtoCommerce.MarketingCampaigns.Data.PostgreSql.csproj" />
+    <ProjectReference Include="..\VirtoCommerce.MarketingCampaigns.Data.SqlServer\VirtoCommerce.MarketingCampaigns.Data.SqlServer.csproj" />
+  </ItemGroup>
+</Project>
