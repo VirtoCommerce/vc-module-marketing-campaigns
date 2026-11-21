@@ -1,0 +1,24 @@
+{
+  "MarketingCampaigns": {
+    "blades": {
+      "hello-world": {
+        "title": "Hello world blade"
+      }
+    }
+  },
+  "permissions": {
+    "marketing-campaigns:access": "Open MarketingCampaigns menu",
+    "marketing-campaigns:create": "Create MarketingCampaigns related data",
+    "marketing-campaigns:read": "View MarketingCampaigns related data",
+    "marketing-campaigns:update": "Update MarketingCampaigns related data",
+    "marketing-campaigns:delete": "Delete MarketingCampaigns related data"
+  },
+  "settings": {
+    "MarketingCampaigns": {
+      "Enabled": {
+        "title": "MarketingCampaigns Enabled",
+        "description": "MarketingCampaigns Enabled setting"
+      }
+    }
+  }
+}
